@@ -40,11 +40,13 @@ class Ui_AboutForm(object):
         self.L_Updat_eRecord.setFont(font)
         self.L_Updat_eRecord.setObjectName("L_Updat_eRecord")
         self.textEdit = QtWidgets.QTextEdit(AboutForm)
+        self.textEdit.setEnabled(True)
         self.textEdit.setGeometry(QtCore.QRect(30, 260, 611, 211))
         font = QtGui.QFont()
         font.setFamily("等线")
         font.setPointSize(12)
         self.textEdit.setFont(font)
+        self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName("textEdit")
         self.L_About = QtWidgets.QLabel(AboutForm)
         self.L_About.setGeometry(QtCore.QRect(20, 65, 631, 51))
@@ -90,6 +92,7 @@ class Ui_AboutForm(object):
         self.L_Github.setFont(font)
         self.L_Github.setLineWidth(1)
         self.L_Github.setWordWrap(True)
+        self.L_Github.setOpenExternalLinks(True)
         self.L_Github.setObjectName("L_Github")
 
         self.retranslateUi(AboutForm)
@@ -122,4 +125,3 @@ class Ui_AboutForm(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'等线\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Github：<a href=\"https://github.com/1175592624/2Lazy2Write\"><span style=\" text-decoration: underline; color:#0000ff;\">https://github.com/1175592624/2Lazy2Write</span></a></p></body></html>"))
-        self.L_Github.setOpenExternalLinks(True)
